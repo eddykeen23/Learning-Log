@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fupfx+=twxmq1a1!^%qfe(e#f2jntd5_6-s9$rb012ff5*l(64'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -141,8 +141,8 @@ if os.getcwd() == '/app':
     # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     # Allow all host headers.
-    ALLOWED_HOSTS = ['*']
-
+    ALLOWED_HOSTS = ['learning-log-jd.herokuapp.com']
+    DEBUG = False
     # Static files (CSS, JavaScript, Images)
     # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
